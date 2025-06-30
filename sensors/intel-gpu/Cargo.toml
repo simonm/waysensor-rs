@@ -1,0 +1,25 @@
+[package]
+name = "waysensor-rs-intel-gpu"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+homepage.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "waysensor-rs-intel-gpu"
+path = "src/main.rs"
+
+[dependencies]
+waysensor-rs-core = { path = "../../core" }
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+clap.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+criterion = "0.5"
+

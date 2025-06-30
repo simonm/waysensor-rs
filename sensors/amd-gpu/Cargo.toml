@@ -1,0 +1,22 @@
+[package]
+name = "waysensor-rs-amd-gpu"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+homepage.workspace = true
+repository.workspace = true
+
+[dependencies]
+waysensor-rs-core = { path = "../../core" }
+clap.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+glob = "0.3"
+memmap2 = "0.9"
+sysinfo = "0.30"
+tokio = { version = "1.0", features = ["full"] }
+
+[dev-dependencies]
+criterion = "0.5"
+

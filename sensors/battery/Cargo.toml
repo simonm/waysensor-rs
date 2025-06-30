@@ -1,0 +1,26 @@
+[package]
+name = "waysensor-rs-battery"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+homepage.workspace = true
+repository.workspace = true
+
+[dependencies]
+waysensor-rs-core = { path = "../../core" }
+clap.workspace = true
+serde = { version = "1.0", features = ["derive"] }
+serde_json.workspace = true
+tokio = { version = "1.0", features = ["full"] }
+thiserror = "1.0"
+anyhow = "1.0"
+async-trait = "0.1"
+chrono = { version = "0.4", features = ["serde"] }
+futures = "0.3"
+dashmap = "5.0"
+regex = "1.0"
+
+[dev-dependencies]
+criterion = "0.5"
+

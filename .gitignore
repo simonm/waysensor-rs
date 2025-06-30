@@ -1,0 +1,26 @@
+# Rust build artifacts
+target/
+Cargo.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Generated files (user specific)
+waysensor-rs-waybar-config.json
+waysensor-rs-style.css
+generated-install.sh
+waybar-config.json
+waybar-style.css
